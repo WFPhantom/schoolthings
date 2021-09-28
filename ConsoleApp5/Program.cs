@@ -1,5 +1,5 @@
 ﻿using System;
-string figure; double a; double b; double h; double area; double r; double p = 3.14;
+string figure; double a; double b; double h; double area; double r;
 
 Console.WriteLine("figure: ");
 figure = Console.ReadLine();
@@ -30,7 +30,7 @@ else if (figure == "circle")
     Console.Write("r = ");
     r = double.Parse(Console.ReadLine());
     double sqr = Math.Pow(r, 2);
-    area = sqr * p;
+    area = sqr * Math.PI;
     Console.WriteLine(area);
     Console.ReadLine();
 }
